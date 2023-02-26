@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "SanghaKali";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/font/SanghaKali-Regular.woff2") format("woff2"),
+    url("/assets/fonts/font/SanghaKali-Regular.woff") format("woff");
+}
+
+body {
+  background-color: #447695;
+  font-size: 22px;
+  line-height: 1.7em;
+  font-style: italic;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 15px;
+  background-color: #447695;
+  color: #bfe6ef;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+li a:hover {
+  color: #eebd6b;
+  text-decoration: none;
+}
+
+.header__navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  border-bottom: 1px solid #04082e;
+  box-shadow: 0px 5px 12px #04082e;
+}
+
+.header__logo {
+  color: #bfe6ef;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.4;
+  text-shadow: 5px 5px 20px #04082e;
+  font-family: "SanghaKali", sans-serif;
+  position: absolute;
+  left: 50px;
+  padding: 15px;
+}
+
+h2 {
+  margin: 100px;
+  font-family: "SanghaKali";
+  font-size: 66px;
+  line-height: 2em;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
+
+.main-section__block {
+  min-height: 80vh;
+  display: inline-block;
+  width: 100vw;
+  height: 100%;
+}
+.main-section__press-reviews {
+  color: #bfe6ef;
+}
+.main-section__photo-gallery {
+  background-color: #65b7ce;
+  color: #04082e;
+}
+.main-section__video-player {
+  background-color: #04082e;
+  color: #bfe6ef;
+}
+.main-section__partners {
+  color: #bfe6ef;
+}
+
+.main-section__partner-logos {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: stretch;
+  column-gap: 7px;
+  row-gap: 5px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.main-section__partner-logo {
+  background: #ffffff;
+  border-radius: 7px;
+  padding: 22px;
+}
+
+.main-section__logo {
+  width: 100%;
+  height: 70px;
+}
+
+.main-section__press-reviews_paragraph {
+  margin: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 100px;
+  font-style: italic;
+  font-size: 20px;
+  border: 1px solid #bfe6ef;
+  box-shadow: 1px 1px 10px 5px #04082e;
+  text-align: justify;
+}
+
+.main-section__press-reviews_paragraph1 {
+  color: #04082e;
+  border: 1px solid #04082e;
+}
+
+.main-section__press-reviews_paragraph2 {
+  margin-bottom: 100px;
+}
+
+.main-section__gallery_column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+.main-section__gallery_column img {
+  width: 200px;
+  height: auto;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.main-section__gallery_column img:hover {
+  opacity: 1;
+}
+
+.main-section__gallery_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-section__gallery_container {
+  position: relative;
+  display: none;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #bfe6ef;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
+.button {
+  background-color: #04082e;
+  border: none;
+  font-style: italic;
+  color: #bfe6ef;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: 50px;
+  margin-bottom: 30px;
+}
+
+.main-section__video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 70px;
+}
+
+.footer_h3 {
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 1.4;
+  color: #447695;
+}
+a {
+  text-decoration: none;
+}
+
+.text__color_light {
+  color: #bfe6ef;
+}
+.text__color_dark {
+  color: #04082e;
+}
+a:hover {
+  color: #bfe6ef;
+  text-decoration: none;
+}
+
+.footer__icon {
+  font-size: 30px;
+  color: #04082e;
+}
+
+.footer__icon:hover {
+  color: #bfe6ef;
+}
+
+.footer_website:hover {
+  color: #65b7ce;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #447695;
+    font-size: 18px;
+    line-height: 1em;
+  }
+
+  .header__navigation {
+    display: inline-block;
+    width: 100%;
+    text-align: end;
+    box-shadow: 0px 5px 12px #04082e;
+  }
+
+  li a {
+    display: inline-block;
+    width: 100vw;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 5px;
+  }
+
+  .header__logo {
+    color: #bfe6ef;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1;
+    text-shadow: 5px 5px 20px #04082e;
+    font-family: "SanghaKali", sans-serif;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 15px;
+  }
+
+  h2 {
+    margin: 50px;
+    font-family: "SanghaKali";
+    font-size: 34px;
+    line-height: 1.2em;
+  }
+  .main-section__partner-logos {
+    display: grid;
+    margin: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: stretch;
+    column-gap: 3px;
+    row-gap: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .main-section__block {
+    min-height: 50vh;
+  }
+
+  .main-section__gallery_column img {
+    width: 100px;
+  }
+
+  .footer_h3 {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1;
+    color: #447695;
+  }
+
+  .main-section__press-reviews_paragraph {
+    margin: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+  }
+}

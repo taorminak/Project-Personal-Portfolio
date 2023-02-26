@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/normalise.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/style_portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="header__logo">SoSoSo</div>
+        <ul class="header__navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="main-section__block main-section__press-reviews">
+          <h2>Press</h2>
+          <div
+            class="main-section__press-reviews_paragraph main-section__press-reviews_paragraph1"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+              dolor sit amet.
+            </p>
+          </div>
+          <button class="button" onclick="myFunctiontext()" id="myBtn">
+            Read more
+          </button>
+          <div id="dots"></div>
+          <div id="more">
+            <p
+              class="main-section__press-reviews_paragraph main-section__press-reviews_paragraph2"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+              dolor sit amet.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="main-section__block main-section__photo-gallery">
+          <h2>Photo gallery</h2>
+          <div class="main-section__gallery_row">
+            <div class="main-section__gallery_column">
+              <img
+                src="assets/img/yannis-papanastasopoulos-yWF2LLan-_o-unsplash.jpg"
+                alt="band"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="main-section__gallery_column">
+              <img
+                src="assets/img/diego-catto-DI6ywiG5N0g-unsplash.jpg"
+                alt="guitars"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="main-section__gallery_column">
+              <img
+                src="assets/img/kyle-arcilla-hCuphhtCo9c-unsplash.jpg"
+                alt="pian"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="main-section__gallery_column">
+              <img
+                src="assets/img/marius-masalar-rPOmLGwai2w-unsplash.jpg"
+                alt="notes"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="main-section__gallery_column">
+              <img
+                src="assets/img/oscar-keys-ojVMh1QTVGY-unsplash.jpg"
+                alt="pian"
+                onclick="myFunction(this);"
+              />
+            </div>
+          </div>
+          <div class="main-section__gallery_container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="closebtn"
+              >&times;</span
+            >
+            <img
+              src="/"
+              id="expandedImg"
+              style="width: 100%"
+              alt="large-picture"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="main-section__block main-section__video-player">
+          <h2>Video player</h2>
+          <video class="main-section__video" controls>
+            <source
+              src="assets/video/pexels-pavel-danilyuk-7352111.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+      <section>
+        <div class="main-section__block main-section__partners">
+          <h2>Partner Logos</h2>
+          <div class="main-section__partner-logos">
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_swarovski"
+                  type="image/svg+xml"
+                  data="assets/img/swarovski-1.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_austrian-airlines"
+                  type="image/svg+xml"
+                  data="assets/img/austrian-airlines-4.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_aeroflot"
+                  type="image/svg+xml"
+                  data="assets/img/aeroflot-russian-airlines-logo-en-.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_freywille"
+                  type="image/svg+xml"
+                  data="assets/img/Frey_Wille.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_goodman"
+                  type="image/svg+xml"
+                  data="assets/img/goodman-ac-1.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_jwt"
+                  type="image/svg+xml"
+                  data="assets/img/jwt.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_instinct"
+                  type="image/svg+xml"
+                  data="assets/img/instinct.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_p&g"
+                  type="image/svg+xml"
+                  data="assets/img/procter-gamble-1.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_j&j"
+                  type="image/svg+xml"
+                  data="assets/img/johnson-johnson-4.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_google"
+                  type="image/svg+xml"
+                  data="assets/img/google-1-1.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_yandex"
+                  type="image/svg+xml"
+                  data="assets/img/yandex-2.svg"
+                ></object>
+              </div>
+            </div>
+            <div class="main-section__partner-logo">
+              <div>
+                <object
+                  class="main-section__logo main-section__logo_bosco-di-ciliegi"
+                  type="image/svg+xml"
+                  data="assets/img/bosco-di-ciliegi-family-77492.svg"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="text-center text__color_dark"
+      style="background-color: #65b7ce"
+    >
+      <div class="container">
+        <section class="mt-5">
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <div class="col-md-2">
+              <h6 class="footer_h3">
+                <a href="#!" class="text__color_dark">About us</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="footer_h3">
+                <a href="portfolio.html" class="text__color_dark">Portfolio</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="footer_h3">
+                <a href="#!" class="text__color_dark">Services</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="footer_h3">
+                <a href="#!" class="text__color_dark">Team</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="footer_h3">
+                <a href="#!" class="text__color_dark">Contact</a>
+              </h6>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-5" />
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum corrupti dicta,
+                aliquam sequi voluptate quas.
+              </p>
+              <a href="https://web.telegram.org/"
+                ><i class="fa fa-telegram footer__icon" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fa fa-instagram footer__icon" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div
+        class="text-center p-3 text__color_light"
+        style="background-color: #447695"
+      >
+        © 2022 Copyright:
+        <a class="text__color_light footer_website" href="/index.html"
+          >SoSoSo.com</a
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

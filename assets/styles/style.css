@@ -1,0 +1,409 @@
+@font-face {
+  font-family: "SanghaKali";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/font/SanghaKali-Regular.woff2") format("woff2"),
+    url("/assets/fonts/font/SanghaKali-Regular.woff") format("woff");
+}
+
+body {
+  background-color: #447695;
+  font-size: 22px;
+  line-height: 1.7em;
+  font-style: italic;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  padding: 15px;
+  background-color: #447695;
+  color: #bfe6ef;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 1.4;
+  text-decoration: none;
+}
+li a:hover {
+  color: #eebd6b;
+  text-decoration: none;
+}
+
+.header__navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.hero-section {
+  height: 95vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.header__logo {
+  color: #bfe6ef;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.4;
+  text-shadow: 5px 5px 20px #04082e;
+  font-family: "SanghaKali", sans-serif;
+  position: absolute;
+  left: 50px;
+  padding: 15px;
+}
+.hero-section__image {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+}
+.hero-section__image img {
+  width: 100%;
+  transform-origin: top;
+  animation: grow infinite;
+  animation-duration: 100s;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+.main-section__legend-text {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 50vh;
+  width: 50vw;
+  text-align: center;
+  margin-top: 300px;
+  color: #04082e;
+  font-style: italic;
+}
+
+.h2_uppercase {
+  line-height: 2em;
+  font-family: "SanghaKali", sans-serif;
+  font-size: 66px;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  padding: 50px;
+}
+
+.servises {
+  background-color: #bfe6ef;
+  text-align: center;
+  color: #04082e;
+}
+
+.main-section__legend {
+  width: 100vw;
+  background-color: #65b7ce;
+}
+
+.h3_uppercase {
+  line-height: 2em;
+  font-family: "SanghaKali", sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.services__container {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid white;
+}
+
+.services__image-container {
+  width: 50vw;
+  height: 500px;
+}
+.servises__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services__container_right {
+  background-color: #447695;
+}
+.services__container_left {
+  background-color: #65b7ce;
+}
+
+.servises__main-title {
+  padding-top: 150px;
+}
+
+.servises__text {
+  width: 50vw;
+  padding: 30px;
+}
+
+.services__button {
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 25px;
+}
+
+.services__button:hover {
+  color: #bfe6ef;
+  cursor: pointer;
+}
+
+.services__button_right {
+  background-color: #65b7ce;
+}
+
+.services__button_left {
+  background-color: #447695;
+}
+
+.footer_h3 {
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 1.4;
+  color: #447695;
+}
+a {
+  text-decoration: none;
+}
+
+.text__color_light {
+  color: #bfe6ef;
+}
+.text__color_dark {
+  color: #04082e;
+}
+a:hover {
+  color: #bfe6ef;
+  text-decoration: none;
+}
+
+.main-section__container_about {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.about-section {
+  background: url(/assets/img/about/clouds.svg) no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.about__title {
+  color: #bfe6ef;
+  padding-top: 100px;
+}
+
+.about__text {
+  color: #bfe6ef;
+  display: inline-block;
+  width: 70%;
+  padding: 50px;
+  padding-bottom: 50px;
+  padding-right: 150px;
+  text-align: justify;
+}
+
+.about__image {
+  padding: 50px;
+  width: 30%;
+}
+
+.about-section {
+  height: 100%;
+}
+
+.section__about_pic {
+  width: 350px;
+}
+
+.servises__description {
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+footer {
+  margin-top: -48px;
+}
+
+.footer__icon {
+  font-size: 30px;
+  color: #04082e;
+}
+
+.footer__icon:hover {
+  color: #bfe6ef;
+}
+
+.footer_website:hover {
+  color: #65b7ce;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #447695;
+    font-size: 18px;
+    line-height: 1em;
+  }
+
+  .header__navigation {
+    display: inline;
+    text-align: end;
+  }
+
+  li a {
+    display: inline-block;
+    width: 100vw;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 5px;
+  }
+
+  .hero-section {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .header__logo {
+    color: #bfe6ef;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1;
+    text-shadow: 5px 5px 20px #04082e;
+    font-family: "SanghaKali", sans-serif;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 15px;
+  }
+
+  .h2_uppercase {
+    line-height: 1.3em;
+    font-size: 34px;
+    padding-top: 30px;
+  }
+
+  .main-section__legend-text {
+    width: 70vw;
+  }
+
+  .h3_uppercase {
+    line-height: 1em;
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .servises__image {
+    height: 100%;
+    width: 100vw;
+  }
+
+  .services__container {
+    display: inline;
+    text-align: center;
+  }
+
+  .servises__text {
+    width: 100vw;
+    padding: 15px;
+  }
+
+  .services__button {
+    border: 1px solid #bfe6ef;
+    color: white;
+    padding: 10px 26px;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 15px;
+  }
+
+  .footer_h3 {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1;
+    color: #447695;
+  }
+
+  .main-section__container_about {
+    display: inline-block;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .servises__description {
+    margin-bottom: 50px;
+  }
+
+  .about__title {
+    padding-top: 50px;
+  }
+
+  .about__text {
+    color: #04082e;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .services__button_left,
+  .services__button_right {
+    background-color: #447695;
+  }
+
+  .about__image {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-section {
+    height: 100%;
+  }
+
+  .section__about_pic {
+    height: 100%;
+  }
+}
