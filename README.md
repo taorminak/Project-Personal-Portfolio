@@ -1,4 +1,5 @@
-Anna Ostanina
+Anna Ostanina's pet-project
+
 This 100%-original project is inspired by the personality of a famous music specialist with international projects and worldwide recognition.
 
 About the project.
